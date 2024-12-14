@@ -1,0 +1,35 @@
+html {
+    min-height: 100vh;
+    width: 100%;
+    font-family: "Lucida Console", Monaco, monospace;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+}
+
+.height-fit {
+    height: fit-content;
+}
+
+.width-fit {
+    width: fit-content;
+}
+
+.horizontal-flex {
+    display: flex;
+    flex-direction: row;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.blue {
+    color: blue;
+}
+
+.background-black {
+    background-color: black;
+}
