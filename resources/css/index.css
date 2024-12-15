@@ -1,3 +1,11 @@
 nav > p, nav > div > a {
     margin: 20px 8px;
 }
+
+header {
+    text-align: center;
+    background-size: 60vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
