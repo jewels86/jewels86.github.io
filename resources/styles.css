@@ -2,6 +2,7 @@ html {
     min-height: 100vh;
     width: 100%;
     font-family: "Lucida Console", Monaco, monospace;
+    background-color: black;
 }
 
 body {
@@ -32,4 +33,9 @@ body {
 
 .background-black {
     background-color: black;
+}
+
+.no-extra {
+    margin: 0;
+    padding: 0;
 }

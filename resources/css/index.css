@@ -4,8 +4,10 @@ nav > p, nav > div > a {
 
 header {
     text-align: center;
-    background-size: 60vh;
-    background-position: center;
+    width: 100vw;
+    height: auto;
+    background-image: url('resources/images/jewel.webp');
+    background-size: contain;
     background-repeat: no-repeat;
-    
+    background-position: center;
 }
