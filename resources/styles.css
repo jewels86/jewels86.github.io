@@ -2,7 +2,8 @@ html {
     min-height: 100vh;
     width: 100%;
     font-family: "Lucida Console", Monaco, monospace;
-    background-color: black;
+    background-color: #0F0F0F;
+    color: #EDEDED;
 }
 
 body {
@@ -22,6 +23,10 @@ body {
     display: flex;
     flex-direction: row;
 }
+.vertical-flex {
+    display: flex;
+    flex-direction: column;
+}
 
 .space-between {
     justify-content: space-between;
@@ -30,12 +35,25 @@ body {
 .blue {
     color: blue;
 }
+.gold {
+    color: gold;
+}
 
 .background-black {
     background-color: black;
+}
+.background-soft-black {
+    background-color: #0F0F0F;
+}
+.background-deep-grey {
+    background-color: #121212;
 }
 
 .no-extra {
     margin: 0;
     padding: 0;
+}
+
+.text-center {
+    text-align: center;
 }

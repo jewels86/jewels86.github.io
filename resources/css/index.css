@@ -1,13 +1,19 @@
 nav > p, nav > div > a {
     margin: 20px 8px;
+    color: blue;
 }
 
 header {
     text-align: center;
     width: 100vw;
-    height: auto;
-    background-image: url('resources/images/jewel.webp');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
+    height: 70vh;
+}
+
+header > h2 {
+    font-size: 2rem;
+    color: #5A189A;
+}
+header > h1 {
+    font-size: 3.5rem;
+    color: blue;
 }
