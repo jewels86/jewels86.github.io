@@ -38,6 +38,9 @@ body {
 .gold {
     color: gold;
 }
+.text-gray {
+    color: #B0B0B0;
+}
 
 .background-black {
     background-color: black;
