@@ -12,11 +12,17 @@ html, body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-nav > p, nav > div > a {
-    margin: 25px 10px;
+nav > p, nav > div > p {
+    margin: 18px 10px;
     padding: 0;
     color: var(--blue);
+}
+nav > div > p > a {
     text-decoration: none;
+    color: var(--blue);
+}
+nav > div > p > a:hover {
+    text-decoration: underline;
 }
 
 .horizontal-flex {
