@@ -2,6 +2,8 @@
     --background-2: #1C1C1C;
     --background-1: #121212;
     --blue: #4682B4;
+    --text-1: #D3D3D3;
+    --text-2: #808080;
 }
 
 html, body {
@@ -19,7 +21,7 @@ nav > p, nav > div > p {
 }
 nav > div > p > a {
     text-decoration: none;
-    color: var(--blue);
+    color: var(--text-2);
 }
 nav > div > p > a:hover {
     text-decoration: underline;
