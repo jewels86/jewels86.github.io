@@ -19,8 +19,14 @@ h1 > b {
 section > h3 {
     color: var(--text-1);
     font-size: clamp(20px, 2.5vw, 30px);
+    margin-top: 4vh;
+    margin-bottom: 2vh;
 }
 section > p {
     font-size: clamp(15px, 1.7vw, 20px);
     margin: 0 6vw;
+}
+section > div > i {
+    font-size: 80px;
+    margin: 4vh 10px;
 }
