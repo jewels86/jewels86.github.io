@@ -12,8 +12,13 @@ html, body {
     background-color: var(--background-1);
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
+    color: var(--text-2);
 }
 
+nav {
+    font-size: 1.2em;
+    width: 100%;
+}
 nav > p, nav > div > p {
     margin: 18px 10px;
     padding: 0;
@@ -30,6 +35,14 @@ nav > div > p > a:hover {
 .horizontal-flex {
     display: flex;
     flex-direction: row;
+}
+.vertical-flex {
+    display: flex;
+    flex-direction: column;
+}
+
+.text-center {
+    text-align: center;
 }
 
 .space-between {
