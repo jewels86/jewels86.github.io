@@ -19,6 +19,9 @@ html, body {
 nav {
     font-size: 1.2em;
     width: 100%;
+    position: sticky;
+    top: 0;
+    background-color: rgba(18, 18, 18, 0.8);
 }
 nav > p, nav > div > p {
     margin: 18px 10px;
