@@ -3,6 +3,10 @@
     --background-1: #121212;
     --blue: #4682B4;
     --purple: #9966CC;
+    --red: #C7676D;
+    --orange: #FFA500;
+    --green: #89A791;
+    --gold: #FFD700;
     --text-1: #D3D3D3;
     --text-2: #808080;
 }
@@ -14,6 +18,25 @@ html, body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
     color: var(--text-2);
+}
+
+.blue {
+    color: var(--blue);
+}
+.purple {
+    color: var(--purple);
+}
+.red {
+    color: var(--red);
+}
+.orange {
+    color: var(--orange);
+}
+.green {
+    color: var(--green);
+}
+.gold {
+    color: var(--gold);
 }
 
 nav {
@@ -35,6 +58,9 @@ nav > div > p > a {
 nav > div > p > a:hover {
     text-decoration: underline;
 }
+nav > div > p > a > i {
+    font-size: 40px;
+}
 
 .horizontal-flex {
     display: flex;
@@ -54,4 +80,12 @@ nav > div > p > a:hover {
 }
 .center-items {
     justify-content: center;
+}
+
+.no-link-style {
+    text-decoration: none;
+    color: var(--text-2);
+}
+.underline {
+    text-decoration: underline;
 }
