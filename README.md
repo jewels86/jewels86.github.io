@@ -5,4 +5,3 @@ My personal website!
 Credits to https://devicon.dev/ for the language icons!
 ## Todos
 - Add another background color
-- Add to footer (contributions, etc)
