@@ -38,7 +38,7 @@ section > div > i {
     height: fit-content;
 }
 .card {
-    scroll-snap-align: start - 2vw;
+    scroll-snap-align: center;
     min-width: clamp(300px, 22vw, 400px);
     max-width: clamp(300px, 22vw, 400px);
     height: auto;
