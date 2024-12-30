@@ -39,7 +39,8 @@ section > div > i {
 }
 .card {
     scroll-snap-align: start;
-    width: clamp(300px, 22vw, 400px);
+    min-width: clamp(300px, 22vw, 400px);
+    max-width: clamp(300px, 22vw, 400px);
     height: auto;
     padding: 1vw;
     margin: 0.5vh 0.5vw;

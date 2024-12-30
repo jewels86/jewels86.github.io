@@ -16,7 +16,7 @@ html, body {
     min-height: 100%;
     background-color: var(--background-1);
     margin: 0;
-    font-family: Lato, Helvetica, Arial;
+    font-family: Helvetica, Arial;
     color: var(--text-2);
 }
 
@@ -65,6 +65,25 @@ nav > div > p > a:hover {
 nav > div > p > a > i {
     font-size: 30px;
 }
+/* Custom scrollbar styles */
+::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--background-1);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--text-2);
+    border-radius: 10px;
+    border: 3px solid var(--background-1);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--purple);
+}
 
 .horizontal-flex {
     display: flex;
@@ -98,8 +117,11 @@ nav > div > p > a > i {
     background-color: color;
 }
 
-.overflow-wrap {
-    overflow: wrap;
+.overflow-x-scroll {
+    overflow-x: scroll;
+}
+.overflow-auto {
+    overflow: auto;
 }
 
 .width-100 {
