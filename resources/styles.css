@@ -16,7 +16,7 @@ html, body {
     min-height: 100%;
     background-color: var(--background-1);
     margin: 0;
-    font-family: Lato;
+    font-family: Lato, Helvetica, Arial;
     color: var(--text-2);
 }
 
@@ -96,4 +96,12 @@ nav > div > p > a > i {
 
 .background-black {
     background-color: color;
+}
+
+.overflow-wrap {
+    overflow: wrap;
+}
+
+.width-100 {
+    width: 100%;
 }
