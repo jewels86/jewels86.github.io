@@ -128,6 +128,10 @@ nav > div > p > a > i {
 .width-100 {
     width: 100%;
 }
+.width-100-force {
+    min-width: 100%;
+    max-width: 100%;
+}
 
 .scroll-snap {
     scroll-snap-type: x mandatory;
