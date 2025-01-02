@@ -60,8 +60,11 @@ nav > div > p > a {
     text-decoration: none;
     color: var(--text-2);
 }
-nav > div > p > a:hover {
+nav > div > p > a:hover, nav > p > a:hover {
     text-decoration: underline;
+}
+nav > p > a {
+    text-decoration: none;
 }
 nav > div > p > a > i {
     font-size: 30px;
