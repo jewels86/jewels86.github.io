@@ -32,7 +32,6 @@ section > p {
 section > div > i {
     font-size: 80px;
     margin: 4vh 10px;
-    scroll-snap-align: center;
 }
 
 .carousel {

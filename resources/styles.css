@@ -39,6 +39,9 @@ html, body {
 .gold {
     color: var(--gold);
 }
+.text-3 {
+    color: var(--text-3)
+}
 
 nav {
     font-size: 1.2em;
