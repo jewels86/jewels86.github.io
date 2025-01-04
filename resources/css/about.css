@@ -1,5 +1,17 @@
-img.me {
+html {
+    font-size: clamp(15px, 1.7vw, 20px);
+}
 
+img.me {
+    border-radius: 20px;
+    margin-top: 5vh;
+    margin-left: 10vw;
+    margin-right: 4vw;
+}
+p.about-paragraph {
+    width: fit-content;
+    margin-top: 5vh;
+    margin-right: 10vw;
 }
 .grid {
     display: grid;
@@ -13,9 +25,24 @@ img.me {
     margin: 2.5%;
     border-radius: 20px;
 }
+.card > p {
+    margin: 0 1.5vw;
+    margin-top: 5vh;
+}
 
 @media (max-width: 600px) {
     .grid {
         grid-template-columns: 1fr;
     }
+}
+
+h1 {
+    font-size: clamp(40px, 4vw, 100px);
+    margin: 0 1.5vw;
+    margin-top: 5vh;
+}
+h2 {
+    margin: 0 10vw;
+    font-size: clamp(25px, 2.8vw, 50px);
+
 }
