@@ -100,6 +100,9 @@ nav > div > p > a > i {
     display: flex;
     flex-direction: column;
 }
+.block {
+    display: block;
+}
 
 .text-center {
     text-align: center;

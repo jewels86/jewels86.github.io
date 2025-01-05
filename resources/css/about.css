@@ -7,6 +7,8 @@ img.me {
     margin-top: 5vh;
     margin-left: 10vw;
     margin-right: 4vw;
+    width: auto;
+    object-fit: contain;
 }
 p.about-paragraph {
     width: fit-content;
@@ -33,6 +35,16 @@ p.about-paragraph {
 @media (max-width: 600px) {
     .grid {
         grid-template-columns: 1fr;
+    }
+    .yap-area {
+        display: block;
+        text-align: center;
+    }
+    p.about-paragraph {
+        margin: 1.5vh 5vw;
+    }
+    img.me {
+        margin: 1vh 5vw;
     }
 }
 
