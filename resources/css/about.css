@@ -58,3 +58,7 @@ h2 {
     font-size: clamp(25px, 2.8vw, 50px);
 
 }
+.has-text > p {
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
