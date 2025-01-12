@@ -1,0 +1,18 @@
+{
+    "name": "Tourmaline",
+    "color": "green",
+    "description": "A comprehensive and efficient web enumeration toolkit.",
+    "languages": ["C#"],
+    "keywords": ["Pentesting", "Directory Enumeration"],
+    "platforms": ["Linux", "Windows via WSL"],
+    "license": "GPL v3",
+    "status": "a-m",
+    "installation": "After downloading the latest release from the GitHub repository, run <code>sudo dpkg -i [FILE]</code>.",
+    "version": "2.1",
+    "authors": ["Jewels"],
+    "links": [
+        ["GitHub", "https://github.com/jewels86/tourmaline", true],
+        ["Documentation", "https://jewels86.gitbook.io/tourmaline/", true],
+        ["Support", "https://github.com/jewels86/tourmaline/issues"]
+    ]
+}
