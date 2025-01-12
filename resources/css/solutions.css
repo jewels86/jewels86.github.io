@@ -1,3 +1,40 @@
 h1 {
-    font-size: clamp(40px, 5.2vw, 100px);
+    font-size: clamp(40px, 5vw, 100px);
+}
+
+.solution {
+    scroll-snap-align: center;
+    min-width: clamp(300px, 22vw, 400px);
+    max-width: clamp(300px, 22vw, 400px);
+    height: auto;
+    padding: 1vw;
+    margin: 0.5vh 0.5vw;
+    text-align: center;
+    background-color: var(--background-2);
+    border-radius: 25px;
+}
+.solution > h2 {
+    font-size: clamp(20px, 1.7vw, 30px);
+}
+.solution > h2 > a {
+    text-decoration: none;
+    color: inherit;
+}
+.solution > h2 > a:hover {
+    text-decoration: underline;
+}
+
+.solution-detail {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    max-width: 600px;
+    padding: 2rem;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
 }
