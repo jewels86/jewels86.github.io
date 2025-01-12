@@ -1,2 +1,4 @@
 axinite
 tourmaline
+topaz
+lazulite

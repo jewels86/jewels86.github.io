@@ -37,13 +37,17 @@ async function main() {
         const solution = await response3.json();
         const element = document.createElement('div');
         element.classList.add('solution-detail');
+        var imgSrc = `/resources/images/solutions/${solution.name.toLowerCase()}.png`;
+        if ((await fetch(imgSrc)).status !== 200) 
+            imgSrc = "resources/images/solutions/default.png";
+
         element.innerHTML = `
         <div>
             <h2 class="${solution.color}">${solution.name}</h2>
             <p>${solution.description}</p>
             <p>License: ${solution.license}<p>
             <p>Status: <span class="${statusToColor[solution.status]}">${statusToText[solution.status]}</span></p>
-            <img src="resources/images/solutions/${solution.name.toLowerCase()}.png" alt="${solution.name}" />
+            <img src="${imgSrc}" alt="${solution.name}" />
         </div>
         <div>
             <ul>
