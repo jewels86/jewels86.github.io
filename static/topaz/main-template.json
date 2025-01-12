@@ -1,0 +1,10 @@
+{
+  "default_profile": "profiles/dark.prof.tpz",
+  "known_workspaces": [
+    {
+      "name": "Main Workspace",
+      "last_accessed": "Never",
+      "path": "workspaces/main.workspace.tpz"
+    }
+  ]
+}
