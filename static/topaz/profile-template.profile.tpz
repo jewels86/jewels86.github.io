@@ -1,0 +1,14 @@
+{
+  "name": "Main Profile",
+  "theme": {
+    "background-1": "#1b1b1e",
+    "background-2": "#28282d",
+    "background-3": "#28282d",
+    "accent-1": "#FFD700",
+    "accent-2": "#9966CC",
+    "accent-3": "#ffffff",
+    "text-1": "#D3D3D3";
+    "text-2": "#A6A6A6";
+    "text-3": "#A6A6A6";
+  }
+}
