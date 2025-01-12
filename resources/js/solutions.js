@@ -1,5 +1,5 @@
 async function main() {
-    const response = await fetch('/solutions/_directory.txt');
+    const response = await fetch('/solutions/directory.txt');
     const directory = await response.text();
     const solutions = directory.split('\n');
     const solutionsElement = document.getElementById('solutions');
