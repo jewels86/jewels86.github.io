@@ -43,6 +43,7 @@ async function main() {
             <p>${solution.description}</p>
             <p>License: ${solution.license}<p>
             <p>Status: <span class="${statusToColor[solution.status]}">${statusToText[solution.status]}</span></p>
+            <img src="resources/images/solutions/${solution.name.toLowerCase()}.png" alt="${solution.name}" />
         </div>
         <div>
             <ul>
@@ -58,6 +59,7 @@ async function main() {
                 </ul>
                 <li>Installation: ${solution.installation}</li>
             </ul>
+            <button onclick="window.location.href = '/solutions'">Close</button>
         </div>
         `
         document.getElementById('body').append(element);

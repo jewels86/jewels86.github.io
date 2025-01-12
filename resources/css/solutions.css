@@ -49,11 +49,37 @@ h1 {
     flex-direction: row;
     justify-content: space-between;
 }
+.solution-detail > div {
+    width: 50%;
+}
 .solution-detail > div > ul {
     list-style-type: none;
     text-align: left;
     padding: 0 0.8vw;
 }
+.solution-detail > div > ul > li {
+    margin: 0.6vh 0;
+}
+.solution-detail > div > img {
+    width: 80%;
+    border-radius: 10px;
+}
+.solution-detail > div > button {
+    align-self: flex-end;
+    margin: 2% 40%;
+    width: 20%;
+    text-align: center;
+    padding: 0.5rem 1rem;
+    background-color: var(--background-2);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.solution-detail > div > button:hover {
+    background-color: var(--background-1);
+}
+
 
 @media (max-width: 600px) {
     .solution {
@@ -62,5 +88,8 @@ h1 {
     }
     .solution-detail {
         flex-direction: column;
+    }
+    .solution-detail > div {
+        width: 100%;
     }
 }
