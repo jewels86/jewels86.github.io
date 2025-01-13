@@ -48,6 +48,7 @@ h1 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    overflow-y: scroll;
 }
 .solution-detail > div {
     width: 50%;
@@ -93,6 +94,7 @@ h1 {
     }
     .solution-detail {
         flex-direction: column;
+        max-height: 90%;
     }
     .solution-detail > div {
         width: 100%;
