@@ -1,14 +1,16 @@
 {
   "name": "Main Profile",
   "theme": {
-    "background1": "#1b1b1e",
-    "background2": "#28282d",
-    "background3": "#28282d",
-    "accent1": "#FFD700",
-    "accent2": "#9966CC",
-    "accent3": "#ffffff",
-    "text1": "#D3D3D3",
-    "text2": "#A6A6A6",
-    "text3": "#A6A6A6"
+    "selector": {
+      "background": "#1b1b1e",
+      "title_buttons": "#28282d",
+      "heading": "#FFD700",
+      "buttons": "#A6A6A6",
+      "buttons_hover": "#D3D3D3",
+      "workspace_name": "#9966CC",
+      "workspace_path": "#A6A6A6",
+      "last_accessed": "#A6A6A6",
+      "workspace_background": "#28282d"
+    }
   }
 }
