@@ -1,1 +1,4 @@
-
+{
+  "name": "Main Workspace",
+  "profile": "profiles/main.profile.tpz"
+}
