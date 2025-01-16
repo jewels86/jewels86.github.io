@@ -14,7 +14,6 @@
         ["GitHub", "https://github.com/jewels86/axcli", true],
         ["PyPI", "https://pypi.org/project/axcli/", true],
         ["Documentation", "https://jewels86.gitbook.io/axinite/axcli", true],
-        ["CLI", "https://github.com/jewels86/axcli"],
         ["Support", "https://github.com/jewels86/axcli/issues"]
     ]
 }
