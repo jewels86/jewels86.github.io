@@ -8,7 +8,7 @@
     "license": "MIT",
     "status": "a-m",
     "installation": "<code>pip install axinite</code>",
-    "version": "1.12",
+    "version": "1.19",
     "authors": ["Jewels"],
     "links": [
         ["GitHub", "https://github.com/jewels86/axinite", true],
