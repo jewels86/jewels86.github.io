@@ -45,7 +45,6 @@ async function main() {
         <div>
             <h2 class="${solution.color}">${solution.name}</h2>
             <p>${solution.description}</p>
-            <p>License: ${solution.license}<p>
             <p>Status: <span class="${statusToColor[solution.status]}">${statusToText[solution.status]}</span></p>
             <img src="${imgSrc}" alt="${solution.name}" />
         </div>
