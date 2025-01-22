@@ -1,6 +1,9 @@
 html {
     font-size: clamp(15px, 1.7vw, 20px);
 }
+nav {
+    font-size: unset;
+}
 
 img.me {
     border-radius: 20px;
