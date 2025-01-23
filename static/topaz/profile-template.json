@@ -13,6 +13,12 @@
       "last_accessed": "#A6A6A6",
       "workspace_background": "#28282d",
       "text": "#28282d"
+    },
+    "index": {
+      "background": "#1b1b1e",
+      "status_bar": "#28282d",
+      "status_bar_text": "#A6A6A6",
+      "status_bar_hover": "#444444"
     }
   }
 }
