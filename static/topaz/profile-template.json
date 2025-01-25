@@ -18,7 +18,8 @@
       "background": "#1b1b1e",
       "status_bar": "#28282d",
       "status_bar_text": "#A6A6A6",
-      "status_bar_hover": "#444444"
+      "status_bar_hover": "#444444",
+      "status_bar_font_size": "13px"
     }
   },
   "status_bar": [
