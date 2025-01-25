@@ -1,4 +1,10 @@
 {
   "name": "Main Workspace",
-  "profile": "profiles/main.profile.tpz"
+  "profile": "profiles/main.profile.tpz",
+  "status_bar": [
+    {
+      "type": "text",
+      "content": "Main Workspace"
+    }
+  ]
 }
