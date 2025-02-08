@@ -14,7 +14,7 @@
       "workspace_background": "#28282d",
       "text": "#28282d"
     },
-    "marketplace-selector": {
+    "marketplace_selector": {
       "background": "#1b1b1e",
       "heading": "#FFD700",
       "buttons": "#A6A6A6",
