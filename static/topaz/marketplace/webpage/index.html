@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>URL Display</title>
+    </head>
+    <body>
+        <h1>Entered URL</h1>
+        <iframe id="url-display" width="100%" height="600px"></iframe>
+
+        <script>
+            function getQueryParams() {
+                const params = new URLSearchParams(window.location.search);
+                return params.get('url');
+            }
+
+            const url = getQueryParams();
+            if (url) {
+                document.getElementById('url-display').src = url;
+            } else {
+                document.getElementById('url-display').textContent = 'No URL provided';
+            }
+        </script>
+    </body>
+</html>

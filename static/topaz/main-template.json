@@ -12,5 +12,25 @@
       "name": "Main Profile",
       "path": "profiles/main.profile.tpz"
     }
+  ],
+  "known_marketplaces": [
+    {
+      "name": "Official Topaz Marketplace",
+      "src": "https://jewels86.me/static/topaz/marketplace.json"
+    }
+  ],
+  "known_widgets": [
+    {
+      "name": "notepad",
+      "src": "widgets/notepad/index.html"
+    },
+    {
+      "name": "clock",
+      "src": "widgets/clock/index.html"
+    },
+    {
+      "name": "webpage",
+      "src": "widgets/webpage/index.html"
+    }
   ]
 }

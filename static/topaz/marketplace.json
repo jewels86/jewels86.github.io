@@ -1,0 +1,38 @@
+{
+    "name": "Official Topaz Marketplace",
+    "widgets": [
+        {
+            "name": "Notepad",
+            "description": "A simple notepad widget, complete with multiple pages and autosaves.",
+            "author": "jewels86",
+            "version": "0.0.0",
+            "id": "notepad",
+            "src": "marketplace/notepad"
+        },
+        {
+            "name": "Clock",
+            "description": [
+                "A simple clock widget, with customizable timezones and formats.",
+                "Includes:",
+                "- World Clock",
+                "- Digital Clock",
+                "- Analog Clock",
+                "- Countdown Timer",
+                "- Stopwatch",
+                "- Alarm Clock"
+            ],
+            "author": "jewels86",
+            "version": "0.0.0",
+            "id": "clock",
+            "src": "marketplace/clock"
+        },
+        {
+            "name": "Webpage",
+            "description": "A simple webpage widget, with a customizable URL and refresh rate.",
+            "author": "jewels86",
+            "version": "0.0.0",
+            "id": "webpage",
+            "src": "marketplace/webpage"
+        }
+    ]
+}
