@@ -42,6 +42,16 @@
       "type": "button",
       "content": "Open Settings",
       "action": "openSettings()"
+    },
+    {
+      "type": "button",
+      "content": "Open Marketplace",
+      "action": "openMarketplace()"
+    },
+    {
+      "type": "button",
+      "content": "Open Workspace Selector",
+      "action": "openSelector()"
     }
   ]
 }
