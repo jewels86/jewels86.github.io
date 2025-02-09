@@ -34,12 +34,13 @@
     },
     "prompt": {
       "background": "#1b1b1e",
-      "title": "#FFD700",
+      "heading": "#FFD700",
       "text": "#A6A6A6",
       "input_background": "#28282d",
       "input_text": "#A6A6A6",
-      "input_border": "#A6A6A6"
-      
+      "input_border": "#A6A6A6",
+      "submit_text": "#A6A6A6",
+      "submit_background": "#444444",
     }
   },
   "status_bar": [
