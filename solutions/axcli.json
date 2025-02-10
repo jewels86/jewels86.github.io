@@ -6,9 +6,9 @@
     "keywords": ["Physics", "Astrodynamics", "Orbital Mechanics", "Engine", "CLI"],
     "platforms": ["Windows", "Linux", "macOS"],
     "license": "MIT",
-    "status": "a-m",
+    "status": "m",
     "installation": "<code>pip install axcli</code>",
-    "version": "1.1",
+    "version": "1.2",
     "authors": ["Jewels"],
     "links": [
         ["GitHub", "https://github.com/jewels86/axcli", true],
