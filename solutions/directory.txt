@@ -2,4 +2,5 @@ axinite
 tourmaline
 topaz
 lazulite
+laserblue
 axcli

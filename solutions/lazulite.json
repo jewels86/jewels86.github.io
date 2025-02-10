@@ -1,13 +1,13 @@
 {
-    "name": "Lazulite",
+    "name": "Lazulite (Deprecated)",
     "color": "blue",
     "description": "A modular, extensible framework that empowers developers to build advanced programming languages.",
     "languages": ["C#"],
     "keywords": ["Language", "Compiler", "Framework"],
     "platforms": ["Windows", "Linux", "macOS"],
     "license": "MIT",
-    "status": "i-d",
-    "installation": "Currently in development.",
+    "status": "d",
+    "installation": "None available.",
     "version": "0.0",
     "authors": ["Jewels"],
     "links": [
