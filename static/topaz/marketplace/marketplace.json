@@ -1,13 +1,15 @@
 {
-    "name": "Official Topaz Marketplace",
+    "number": 3,
     "widgets": [
         {
             "name": "Notepad",
-            "description": "A simple notepad widget, complete with multiple pages and autosaves.",
+            "description": ["A simple notepad widget, complete with multiple pages and autosaves."],
             "author": "jewels86",
             "version": "0.0.0",
             "id": "notepad",
-            "src": "marketplace/notepad"
+            "preview": null,
+            "dependencies": [],
+            "created_on": [2, 23, 2025]
         },
         {
             "name": "Clock",
@@ -24,15 +26,19 @@
             "author": "jewels86",
             "version": "0.0.0",
             "id": "clock",
-            "src": "marketplace/clock"
+            "preview": null,
+            "dependencies": [],
+            "created_on": [2, 23, 2025]
         },
         {
             "name": "Webpage",
-            "description": "A simple webpage widget, with a customizable URL and refresh rate.",
+            "description": ["A simple webpage widget, with a customizable URL and refresh rate."],
             "author": "jewels86",
             "version": "0.0.0",
             "id": "webpage",
-            "src": "marketplace/webpage"
+            "preview": null,
+            "dependencies": [],
+            "created_on": [2, 23, 2025]
         }
     ]
 }

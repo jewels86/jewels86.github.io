@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Marketplace</title>
+        <link rel="stylesheet" href="index.css">
+        <script src="index.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <h1>Topaz Official Marketplace</h1>
+            <p id="subtitle">null</p>
+        </header>
+        <main>
+            <section id="topbar">
+                <input type="text" id="search" placeholder="Search for workspaces, mods, and themes">
+                <select id="sort">
+                    <option value="newest">Newest</option>
+                    <option value="oldest">Oldest</option>
+                    <option value="popular">Popular</option>
+                    <option value="unpopular">Rating</option>
+                </select>
+                <select id="filter">
+                    <option value="all">All</option>
+                    <option value="workspaces">Workspaces</option>
+                    <option value="mods">Mods</option>
+                    <option value="themes">Themes</option>
+                </select>
+            </section>
+            <section id="items">
+                
+            </section>
+        </main>
+        <div id="overlay" class="hidden">
+            <div id="overlay-content">
+                <span id="close-overlay">&times;</span>
+                <div id="overlay-details"></div>
+            </div>
+        </div>
+    </body>
+</html>
