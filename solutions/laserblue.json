@@ -1,0 +1,16 @@
+{
+    "name": "Laserblue",
+    "color": "blue",
+    "description": "Designs and implementations for a conceptual, Proof-of-Performance satellite network.",
+    "languages": ["None"],
+    "keywords": ["Network", "Satellite"],
+    "platforms": ["None"],
+    "license": "MIT",
+    "status": "i-d",
+    "installation": "None available.",
+    "version": "0.0",
+    "authors": ["Jewels"],
+    "links": [
+        ["GitHub", "https://github.com/jewels86/laserblue", true]
+    ]
+}

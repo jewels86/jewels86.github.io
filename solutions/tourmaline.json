@@ -6,7 +6,7 @@
     "keywords": ["Pentesting", "Directory Enumeration"],
     "platforms": ["Linux", "Windows via WSL"],
     "license": "GPL v3",
-    "status": "a-m",
+    "status": "m",
     "installation": "After downloading the latest release from the GitHub repository, run <code>sudo dpkg -i [FILE]</code>.",
     "version": "2.2",
     "authors": ["Jewels"],
