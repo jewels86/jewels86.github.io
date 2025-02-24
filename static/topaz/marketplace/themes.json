@@ -1,0 +1,25 @@
+{
+    "number": 2,
+    "themes": [
+        {
+            "name": "Dark Mode",
+            "description": ["A sleek dark mode theme for a comfortable viewing experience at night."],
+            "author": "jewels86",
+            "version": "1.0.0",
+            "id": "dark-mode",
+            "preview": null,
+            "dependencies": [],
+            "created_on": [2, 24, 2025]
+        },
+        {
+            "name": "Light Mode",
+            "description": ["A bright and clean light mode theme for daytime use."],
+            "author": "jewels86",
+            "version": "1.0.0",
+            "id": "light-mode",
+            "preview": null,
+            "dependencies": [],
+            "created_on": [2, 24, 2025]
+        }
+    ]
+}

@@ -1,8 +1,9 @@
 async function main() {
-    const marketplace = await (await fetch('/static/topaz/marketplace/marketplace.json')).json();
+    const widgets = await (await fetch('/static/topaz/marketplace/widgets.json')).json();
+    const themes = await (await fetch('/static/topaz/marketplace/themes.json')).json();
 
     const subtitle = document.getElementById('subtitle');
-    subtitle.textContent = `${marketplace.number} items available`;
+    subtitle.textContent = `${widgets.number + themes.number} items available; ${widgets.number} widgets and ${themes.number} themes`;
     
     const container = document.getElementById('items');
     const sortSelect = document.getElementById('sort');
@@ -49,6 +50,8 @@ async function main() {
                 return items.sort((a, b) => parseDate(b.created_on) - parseDate(a.created_on));
             case 'oldest':
                 return items.sort((a, b) => parseDate(a.created_on) - parseDate(b.created_on));
+            case 'alphabetical':
+                return items.sort((a, b) => a.name.localeCompare(b.name));
             default:
                 return items;
         }
@@ -80,7 +83,7 @@ async function main() {
         const params = new URLSearchParams(window.location.search);
         if (params.has('item')) {
             const itemId = params.get('item');
-            const item = marketplace.widgets.find(widget => widget.id === itemId);
+            const item = [...widgets.widgets, ...themes.themes].find(widget => widget.id === itemId);
             if (item) {
                 showOverlay(item);
             }
@@ -88,17 +91,17 @@ async function main() {
     }
 
     sortSelect.addEventListener('change', () => {
-        const sortedItems = sortItems([...marketplace.widgets], sortSelect.value);
+        const sortedItems = sortItems([...widgets.widgets, ...themes.themes], sortSelect.value);
         renderItems(sortedItems);
     });
 
     searchInput.addEventListener('input', () => {
-        const filteredItems = filterItems(marketplace.widgets, searchInput.value, filterSelect.value);
+        const filteredItems = filterItems([...widgets.widgets, ...themes.themes], searchInput.value, filterSelect.value);
         renderItems(filteredItems);
     });
 
     filterSelect.addEventListener('change', () => {
-        const filteredItems = filterItems(marketplace.widgets, searchInput.value, filterSelect.value);
+        const filteredItems = filterItems([...widgets.widgets, ...themes.themes], searchInput.value, filterSelect.value);
         renderItems(filteredItems);
     });
 
@@ -108,7 +111,7 @@ async function main() {
         window.history.pushState({}, document.title, window.location.pathname);
     });
 
-    renderItems(marketplace.widgets);
+    renderItems([...widgets.widgets, ...themes.themes]);
     checkForItemInUrl();
 }
 
