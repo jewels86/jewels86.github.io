@@ -58,12 +58,17 @@ async function main() {
     }
 
     function filterItems(items, query, filter) {
-        return items.filter(item => 
-            (filter === 'all' || item.type === filter) &&
-            (item.name.toLowerCase().includes(query.toLowerCase()) ||
-            item.description.some(desc => desc.toLowerCase().includes(query.toLowerCase())) ||
-            item.author.toLowerCase().includes(query.toLowerCase()))
-        );
+        return items.filter(item => {
+            const isWidget = widgets.widgets.some(widget => widget.id === item.id);
+            const isTheme = themes.themes.some(theme => theme.id === item.id);
+            const matchesFilter = (filter === 'all') || 
+                                  (filter === 'widgets' && isWidget) || 
+                                  (filter === 'themes' && isTheme);
+            return matchesFilter &&
+                   (item.name.toLowerCase().includes(query.toLowerCase()) ||
+                   item.description.some(desc => desc.toLowerCase().includes(query.toLowerCase())) ||
+                   item.author.toLowerCase().includes(query.toLowerCase()));
+        });
     }
 
     function showOverlay(item) {
@@ -92,16 +97,19 @@ async function main() {
 
     sortSelect.addEventListener('change', () => {
         const sortedItems = sortItems([...widgets.widgets, ...themes.themes], sortSelect.value);
-        renderItems(sortedItems);
+        const filteredItems = filterItems(sortedItems, searchInput.value, filterSelect.value);
+        renderItems(filteredItems);
     });
 
     searchInput.addEventListener('input', () => {
-        const filteredItems = filterItems([...widgets.widgets, ...themes.themes], searchInput.value, filterSelect.value);
+        const sortedItems = sortItems([...widgets.widgets, ...themes.themes], sortSelect.value);
+        const filteredItems = filterItems(sortedItems, searchInput.value, filterSelect.value);
         renderItems(filteredItems);
     });
 
     filterSelect.addEventListener('change', () => {
-        const filteredItems = filterItems([...widgets.widgets, ...themes.themes], searchInput.value, filterSelect.value);
+        const sortedItems = sortItems([...widgets.widgets, ...themes.themes], sortSelect.value);
+        const filteredItems = filterItems(sortedItems, searchInput.value, filterSelect.value);
         renderItems(filteredItems);
     });
 
@@ -111,7 +119,8 @@ async function main() {
         window.history.pushState({}, document.title, window.location.pathname);
     });
 
-    renderItems([...widgets.widgets, ...themes.themes]);
+    const sortedItems = sortItems([...widgets.widgets, ...themes.themes], 'newest');
+    renderItems(sortedItems);
     checkForItemInUrl();
 }
 
