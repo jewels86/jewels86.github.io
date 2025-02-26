@@ -76,6 +76,12 @@ main {
     text-decoration: underline;
 }
 
+body.overlay-active #overlay-content .overlay-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 body.overlay-active #overlay-content .download-button {
     padding: 0.5rem 1rem;
     background-color: #007bff;

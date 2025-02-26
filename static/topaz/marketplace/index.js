@@ -73,13 +73,15 @@ async function main() {
 
     function showOverlay(item) {
         overlayContent.innerHTML = `
-            <h2>${item.name}</h2>
+            <div class="overlay-header">
+                <h2>${item.name}</h2>
+                <button class="download-button" onclick="download('${item.id}')">Download</button>
+            </div>
             <p>${item.description.join('<br>')}</p>
             <p>Created on: ${item.created_on.join('/')}</p>
             <p>Dependencies: ${item.dependencies.join(', ')}</p>
             <p>Author: ${item.author}</p>
             <p>Version: ${item.version}</p>
-            <button class="download-button" onclick="download('${item.id}')">Download</button>
         `;
         overlay.classList.remove('hidden');
         document.body.classList.add('overlay-active');
