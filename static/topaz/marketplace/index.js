@@ -79,6 +79,7 @@ async function main() {
             <p>Dependencies: ${item.dependencies.join(', ')}</p>
             <p>Author: ${item.author}</p>
             <p>Version: ${item.version}</p>
+            <button class="download-button" onclick="download('${item.id}')">Download</button>
         `;
         overlay.classList.remove('hidden');
         document.body.classList.add('overlay-active');
@@ -122,6 +123,10 @@ async function main() {
     const sortedItems = sortItems([...widgets.widgets, ...themes.themes], 'newest');
     renderItems(sortedItems);
     checkForItemInUrl();
+}
+
+function download(id) {
+    window.postMessage({ url: `/static/topaz/marketplace/download/${id}.zip` }, '*');
 }
 
 main();

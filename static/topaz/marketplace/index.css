@@ -52,6 +52,13 @@ main {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+.item-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .item-box a {
     display: block;
     font-size: 1.4rem;
@@ -67,6 +74,21 @@ main {
 
 .item-box a:hover {
     text-decoration: underline;
+}
+
+body.overlay-active #overlay-content .download-button {
+    padding: 0.5rem 1rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    margin-top: 1rem;
+}
+
+body.overlay-active #overlay-content .download-button:hover {
+    background-color: #0056b3;
 }
 
 body.overlay-active #overlay {
