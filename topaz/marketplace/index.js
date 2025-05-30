@@ -1,6 +1,6 @@
 async function main() {
-    const widgets = await (await fetch('topaz/marketplace/widgets.json')).json();
-    const themes = await (await fetch('topaz/marketplace/themes.json')).json();
+    const widgets = await (await fetch('widgets.json')).json();
+    const themes = await (await fetch('themes.json')).json();
 
     const all = [...widgets.widgets, ...themes.themes];
 
