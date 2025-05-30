@@ -2,6 +2,8 @@ async function main() {
     const widgets = await (await fetch('/static/topaz/marketplace/widgets.json')).json();
     const themes = await (await fetch('/static/topaz/marketplace/themes.json')).json();
 
+    const all = [...widgets.widgets, ...themes.themes];
+
     const subtitle = document.getElementById('subtitle');
     subtitle.textContent = `${widgets.number + themes.number} items available; ${widgets.number} widgets and ${themes.number} themes`;
     
@@ -128,7 +130,7 @@ async function main() {
 }
 
 function download(id) {
-    window.postMessage({ url: `/static/topaz/marketplace/download/${id}.zip` }, '*');
+    window.postMessage({ paths: all.find(item => item.id === id)?.files }, '*');
 }
 
 main();

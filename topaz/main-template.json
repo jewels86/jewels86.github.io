@@ -16,7 +16,7 @@
   "known_marketplaces": [
     {
       "name": "Official Topaz Marketplace",
-      "src": "https://jewels86.me/static/topaz/marketplace"
+      "src": "https://jewels86.me/topaz/marketplace"
     }
   ],
   "known_widgets": [

@@ -9,7 +9,10 @@
             "id": "notepad",
             "preview": null,
             "dependencies": [],
-            "created_on": [2, 23, 2025]
+            "created_on": [2, 23, 2025],
+            "files": [
+                "notepad/index.html"
+            ]
         },
         {
             "name": "Clock",
@@ -28,7 +31,10 @@
             "id": "clock",
             "preview": null,
             "dependencies": [],
-            "created_on": [2, 23, 2025]
+            "created_on": [2, 23, 2025],
+            "files": [
+                "clock/index.html"
+            ]
         },
         {
             "name": "Webpage",
@@ -38,7 +44,10 @@
             "id": "webpage",
             "preview": null,
             "dependencies": [],
-            "created_on": [2, 23, 2025]
+            "created_on": [2, 23, 2025],
+            "files": [
+                "webpage/index.html"
+            ]
         }
     ]
 }

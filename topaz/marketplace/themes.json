@@ -9,7 +9,10 @@
             "id": "dark-mode",
             "preview": null,
             "dependencies": [],
-            "created_on": [2, 24, 2025]
+            "created_on": [2, 24, 2025],
+            "files": [
+                "dark-mode/dm.json"
+            ]
         },
         {
             "name": "Light Mode",
@@ -19,7 +22,10 @@
             "id": "light-mode",
             "preview": null,
             "dependencies": [],
-            "created_on": [2, 24, 2025]
+            "created_on": [2, 24, 2025],
+            "files": [
+                "light-mode/lm.json"
+            ]
         }
     ]
 }
