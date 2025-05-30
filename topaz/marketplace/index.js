@@ -2,7 +2,7 @@ async function main() {
     const widgets = await (await fetch('widgets.json')).json();
     const themes = await (await fetch('themes.json')).json();
 
-    const all = [...widgets.widgets, ...themes.themes];
+    window.all = [...widgets.widgets, ...themes.themes];
 
     const subtitle = document.getElementById('subtitle');
     subtitle.textContent = `${widgets.number + themes.number} items available; ${widgets.number} widgets and ${themes.number} themes`;
